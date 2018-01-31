@@ -2,8 +2,8 @@
 # This is the challenge if ever to refer back to it.
 
 #Check
-p = 10
-l = 5
+p = 12
+l = 0
 
 '''Checks and outputs 24 hour time'''
 def twelve_hour_time_fix(x, n):
@@ -21,7 +21,7 @@ def twelve_hour_time_fix(x, n):
 	else: 
 		return("oh noes, there's an error, actually use non float and non string inputs!")
 
-# These functions I made reuqire string formatting
+#The above function is to show the evolution of my thinking process
 
 ''' This is the better version of my above function '''
 def twenty_four_hour_time_fix(x, n):
@@ -43,12 +43,12 @@ def twenty_four_hour_time_fix(x, n):
 			elif x <= 12 and n >= 10 and n < 60:
 				return("It's " + str(x) + " oh " + str(n) + " " + str(meridian))
 			elif x <= 12 and n == 0:
-				return("It's " + str(x) + " oh clock" + " " + str(meridian))
+				return("It's " + str(x) + " " + str(meridian))
 			elif x <= 12 and n == 0:
 				return("error")
 		else:
 			if x <= 12 and n == 0:
-				return("It's " + str(x) + " oh clock " + " " + str(meridian))
+				return("It's " + str(x) + " " + str(meridian))
 			elif x <= 12 and n < 10:
 				return("It's " + str(x) + " oh 0" + str(n) + " " + str(meridian))
 			elif x <= 12 and n >= 10 and n < 60:
@@ -60,4 +60,3 @@ def twenty_four_hour_time_fix(x, n):
 
 print(twenty_four_hour_time_fix(p, l))
 
-print(twelve_hour_time_fix(p, l))
